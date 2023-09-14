@@ -69,7 +69,7 @@ func Call(provider, specPath string) (string, error) {
 		return "", fmt.Errorf(errstr)
 	}
 
-	return strings.TrimSpace(stdOut.String()), nil
+	return stdOut.String(), nil
 }
 
 // Given a provider name, it returns a path to executable prefixed with DefaultPath. If
